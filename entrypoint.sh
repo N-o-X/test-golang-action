@@ -12,7 +12,7 @@ ln -s "${PWD}" "${WORKDIR}"
 cd "${WORKDIR}"
 echo "${PWD}"
 
-ls 0> echo
+echo $(ls)
 
 dep ensure
 
