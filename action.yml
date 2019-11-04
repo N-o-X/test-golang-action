@@ -1,0 +1,6 @@
+  
+name: 'Test Golang'
+description: 'Runs all golang tests'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
