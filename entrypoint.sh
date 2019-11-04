@@ -7,6 +7,8 @@ WORKDIR="${GOPATH}/src/github.com/${GITHUB_REPOSITORY}"
 echo "${GITHUB_REPOSITORY}"
 echo "${WORKDIR}"
 
+echo $(ls)
+
 mkdir -p "$(dirname "${WORKDIR}")"
 ln -s "${PWD}" "${WORKDIR}"
 cd "${WORKDIR}"
