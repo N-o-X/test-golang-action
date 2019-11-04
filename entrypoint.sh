@@ -2,10 +2,9 @@
 
 set -e
 
-if [ -z "${IMPORT}" ]; then
-  IMPORT="${GITHUB_REPOSITORY}"
-fi
 WORKDIR="${GOPATH}/src/github.com/${GITHUB_REPOSITORY}"
+
+echo "${GITHUB_REPOSITORY}"
 
 mkdir -p "$(dirname "${WORKDIR}")"
 ln -s "${PWD}" "${WORKDIR}"
