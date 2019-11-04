@@ -5,10 +5,12 @@ set -e
 WORKDIR="${GOPATH}/src/github.com/${GITHUB_REPOSITORY}"
 
 echo "${GITHUB_REPOSITORY}"
+echo "${WORKDIR}"
 
 mkdir -p "$(dirname "${WORKDIR}")"
 ln -s "${PWD}" "${WORKDIR}"
 cd "${WORKDIR}"
+echo "${PWD}"
 
 dep ensure
 
