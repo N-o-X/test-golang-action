@@ -3,6 +3,7 @@ FROM debian:10
 RUN apt update && apt install -y curl git golang mariadb-server redis-server
 
 RUN adduser --disabled-password icingadb
+RUN usermod -a -G root icingadb
 
 USER icingadb
 
