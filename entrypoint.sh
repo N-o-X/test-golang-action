@@ -2,7 +2,7 @@
 
 set -e
 
-WORKDIR="/home/icingadb/src/github.com/${GITHUB_REPOSITORY}"
+WORKDIR="/home/icingadb/go/src/github.com/${GITHUB_REPOSITORY}"
 
 echo "${GITHUB_REPOSITORY}"
 echo "${WORKDIR}"
