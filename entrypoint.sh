@@ -16,7 +16,7 @@ echo "${PWD}"
 
 echo $(ls)
 
-dep ensure
+/home/icingadb/go/bin/dep ensure
 
 go fmt $(go list ./... | grep -v /vendor/)
 go vet $(go list ./... | grep -v /vendor/)
