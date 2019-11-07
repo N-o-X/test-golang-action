@@ -8,9 +8,9 @@ echo "${GITHUB_REPOSITORY}"
 echo "${WORKDIR}"
 
 mkdir -p "$(dirname "${WORKDIR}")"
-ln -s "${PWD}" "${WORKDIR}"
+cp -r "${PWD}" "${WORKDIR}"
 
-chown -R icingadb: ${PWD}
+chown -R icingadb: ${WORKDIR}
 
 su icingadb
 
