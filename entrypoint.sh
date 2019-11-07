@@ -9,6 +9,11 @@ echo "${WORKDIR}"
 
 mkdir -p "$(dirname "${WORKDIR}")"
 ln -s "${PWD}" "${WORKDIR}"
+
+chown -R icingadb: ${PWD}
+
+su icingadb
+
 cd "${WORKDIR}"
 
 export GOPATH="/home/icingadb/go"

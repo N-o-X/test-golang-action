@@ -12,4 +12,6 @@ RUN curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 
 COPY entrypoint.sh /entrypoint.sh
 
+USER root
+
 ENTRYPOINT ["/entrypoint.sh"]
